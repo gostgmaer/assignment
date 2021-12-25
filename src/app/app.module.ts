@@ -5,7 +5,12 @@ import {FontawesomeObject} from '@fortawesome/fontawesome-svg-core';
 import {} from '@fortawesome/free-solid-svg-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { AngularFontAwesomeModule } from 'angular-font-awesome'
+import { UserModule } from './user/user.module';
+import {ServerModule} from './server/server.module';
+import { UicomponentModule } from './uicomponent/uicomponent.module';
+//import { UserModule } from './user/user.module'; */
+
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    ServerModule,
+    UserModule,
+    UicomponentModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
